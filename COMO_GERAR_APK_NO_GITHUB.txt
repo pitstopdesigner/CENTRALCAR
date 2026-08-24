@@ -1,0 +1,37 @@
+CENTRAL MULTIMÍDIA TV BOX - COMO GERAR O APK ONLINE
+===================================================
+
+O projeto já contém o GitHub Actions necessário para gerar o APK.
+
+PASSO A PASSO
+
+1. Entre em https://github.com e faça login.
+2. Clique em New repository.
+3. Escolha um nome, por exemplo:
+   central-multimidia-tvbox
+4. Crie o repositório.
+5. Descompacte este ZIP no computador.
+6. Envie TODO o conteúdo da pasta CentralMultimidiaTVBox para a raiz do repositório.
+   É importante enviar também a pasta oculta .github.
+7. Aguarde o GitHub terminar de enviar os arquivos.
+8. Abra a aba Actions.
+9. Clique no workflow "Gerar APK TV Box".
+10. Clique em "Run workflow" e depois novamente em "Run workflow".
+11. Aguarde a compilação terminar com o símbolo verde.
+12. Abra a execução concluída.
+13. Na parte inferior da página procure "Artifacts".
+14. Baixe "Central-Multimidia-TVBox-APK".
+15. O download será um ZIP contendo:
+    Central-Multimidia-TVBox.apk
+16. Extraia o APK e instale na TV Box Android.
+
+OBSERVAÇÃO
+O workflow também é executado automaticamente quando houver alterações enviadas para a branch main ou master.
+
+REQUISITOS CONFIGURADOS
+- Java 17
+- Gradle 8.9
+- Android Gradle Plugin 8.7.3
+- compileSdk 35
+- minSdk 23 (Android 6.0+)
+- APK debug para instalação direta/testes
